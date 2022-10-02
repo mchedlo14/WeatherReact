@@ -1,0 +1,50 @@
+.input-wrapper{
+    display: flex;
+    gap: 10px;
+    width: 450px;
+    height: 100vh;
+    justify-content: center;
+    background-color: #1E213A;
+    flex-direction: column;
+}
+input{
+    width: 230px;
+    height: 48px;
+    border: 0;
+    border-radius: 3px;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+    box-shadow:2px 2px 2px 2px #1E213A;
+}
+
+button{
+    width: 86px;
+    height: 48px;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #3C47E9;
+    color: white;
+    margin-left: 10px;
+    font-size: 14px;
+    box-shadow:2px 2px 2px 2px #1E213A;
+}
+button:hover{
+    background-color: #535ef0;
+    transition: all 0.3s;
+}
+.input-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-city-name{
+    margin-left: 10px;
+}
+::placeholder{
+    color: #616475;
+
+}

@@ -1,0 +1,98 @@
+.information-container{
+    background-color: #100E1D;
+    width:100% ;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.city-name,.temp{
+    margin: 0;
+    padding: 15px;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.name-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-weather{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+p{
+    color: whitesmoke;
+    font-size: 20px;
+}
+.week-weather-container{
+    max-width: 700px;
+    width: 80%;
+    height: 180px;
+    background-color: #100E1D;
+}
+.detail-first-box{
+    width: 700px;
+    height: auto;
+}
+.highlights-text{
+    padding: 0;
+    margin: 0;
+    color: #E7E7EB;
+    font-weight: 700;
+}
+.highlights-first-div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.highlights-second-div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.wind-box{
+    width: 328px;
+    height: 204px;
+    background-color: #1E213A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 1px;
+}
+.wind-box2{
+    width: 328px;
+    height: 169px;
+    background-color: #1E213A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 1px;
+}
+.wind-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E7E7EB;
+}
+.wind-text{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+    margin: 0;
+    color: #E7E7EB;
+}
