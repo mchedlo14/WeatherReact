@@ -1,8 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import '../assets/CityInput.css'
 
 const CityInput = ({setSearchedCity,getWeatherData,name}) => {
     const [city,setCity] = useState('')
+
+    const inputRef = useRef(null)
+
+    useEffect(() => {
+      inputRef.current.focus()
+    },[])
 
     useEffect(() => {
         setSearchedCity(city)
@@ -11,7 +17,7 @@ const CityInput = ({setSearchedCity,getWeatherData,name}) => {
   return (
     <div className='input-wrapper'>
       <div className='input-box'>
-        <input type='text' placeholder = 'Type Country' onChange={e => setCity(e.target.value)}/>
+        <input type='text' placeholder = 'Type Country' onChange={e => setCity(e.target.value)} ref={inputRef}/>
         <button onClick={getWeatherData}>Search</button>
       </div>
 

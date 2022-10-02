@@ -3,6 +3,7 @@ import '../assets/Dayweather.css'
 import CityInput from './CityInput'
 import DetailInformation from './DetailInformation'
 import ErrorComp from './ErrorComp';
+import GeoApi from './GeoApi';
 
 const API_KEY = 'd136918b7413876eb34736bd8a116199';
 
@@ -27,7 +28,7 @@ const DayWeather = () => {
         :
         !weatherData? <ErrorComp />
         :
-        <></>
+        <GeoApi />
         }
     </div>
   )

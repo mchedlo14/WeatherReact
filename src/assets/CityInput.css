@@ -1,11 +1,8 @@
 .input-wrapper{
-    display: flex;
     gap: 10px;
     width: 450px;
     height: 100vh;
-    justify-content: center;
     background-color: #1E213A;
-    flex-direction: column;
 }
 input{
     width: 230px;
@@ -40,6 +37,7 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 180px;
 }
 .input-city-name{
     margin-left: 10px;
