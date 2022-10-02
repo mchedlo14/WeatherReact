@@ -22,6 +22,7 @@ const DetailInformation = ({weatherData}) => {
               <div className='wind-box'>
                 <h3 className='wind-title'>Humidity</h3>
                 <p className='wind-text'>{weatherData.main.humidity}%</p>
+                <input type='range' min="0" max={100} value={weatherData.main.humidity} className='range-input'/>
               </div>
 
             </div>
