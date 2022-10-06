@@ -33,7 +33,7 @@ const GeoApi = ({setLocData}) => {
 
   useEffect(() => {
     getWeatherData()
-  },[])
+  },[getLocation])
   return (
     <>
     {
