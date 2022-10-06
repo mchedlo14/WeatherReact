@@ -99,3 +99,45 @@ p{
     margin: 0;
     color: #E7E7EB;
 }
+
+@media(max-width:1050px){
+    .highlights-first-div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .highlights-second-div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .information-container{
+        height: auto;
+    }
+    .dayweather-wrapper{
+        height: auto;
+    }
+    .input-wrapper{
+        height: 870px;
+    }
+}
+@media(max-width:764px){
+    .dayweather-wrapper{
+        flex-direction: column;
+        height: auto;
+    }
+    .highlights-text{
+        text-align: center;
+        margin-top: 100px;
+    }
+    .input-wrapper{
+        width: 100%;
+        margin-top: 1000px;
+    }
+    input{
+        height: 40px;
+        width: 200px;
+    }
+    button{
+        height: 43px;
+        width: 80px;
+    }
+}
