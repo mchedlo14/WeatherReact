@@ -6,8 +6,8 @@ const day = date_.getDay()
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 
-const CityInput = ({setSearchedCity,getWeatherData,name,condition,temp,weatherData}) => {
-    const [city,setCity] = useState('')
+const CityInput = ({setSearchedCity,getWeatherData,locData,weatherData,status}) => {
+    const [city,setCity] = useState(locData.name)
 
     const inputRef = useRef(null)
 
@@ -51,6 +51,31 @@ const CityInput = ({setSearchedCity,getWeatherData,name,condition,temp,weatherDa
             <p className='today-text'>{days[day]}</p>
           </div>
         </>
+         :
+         Object.keys(locData).length > 0  ? 
+         <>
+         <div className='name-container'>
+           <div className='detail-about-city'>
+ 
+             <p className='input-city-name'>
+               {locData.name}
+             </p>
+ 
+             <p className='temperature'>
+               {Math.round(locData.main.temp - 271.15)} <span>°C</span>
+             </p>
+ 
+             <p className='condition'>
+               {locData.weather[0].description}
+             </p>
+           </div>
+         </div>
+           <div className='date-container'>
+             <p className='today-text'>Today</p>
+             <p className='today-text period'>.</p>
+             <p className='today-text'>{days[day]}</p>
+           </div>
+         </>
          :
          <></>
       }

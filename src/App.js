@@ -4,7 +4,7 @@ import { ClipLoader } from 'react-spinners'
 import './app.css'
 const App = () => {
   const [loading,setLoading] = useState(false)
-
+  
   useEffect(() => {
     setLoading(true)
 
