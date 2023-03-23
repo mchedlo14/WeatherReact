@@ -25,11 +25,12 @@ button{
     color: white;
     margin-left: 10px;
     font-size: 14px;
+    font-weight: 500;
     box-shadow:2px 2px 2px 2px #1E213A;
 }
 button:hover{
-    background-color: #535ef0;
-    transition: all 0.3s;
+    background-color: #262eaa;
+    transition: all 0.5s;
 }
 .input-box{
     width: 100%;

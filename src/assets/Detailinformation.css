@@ -72,7 +72,12 @@ p{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    border-radius: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.wind-box:hover{
+    scale: 1.02;
+    transition: all 0.5s;
 }
 .wind-box2{
     max-width: 328px;
@@ -84,7 +89,12 @@ p{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    border-radius: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.wind-box2:hover{
+    scale: 1.02;
+    transition: all 0.5s;
 }
 .wind-title{
     font-weight: 500;

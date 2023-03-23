@@ -1,5 +1,6 @@
 import React from 'react'
 import '../assets/Detailinformation.css'
+import { Typewriter } from 'react-simple-typewriter'
 
 const DetailInformation = ({weatherData}) => {
   return (

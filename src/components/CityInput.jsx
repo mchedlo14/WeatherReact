@@ -5,8 +5,10 @@ const date_ = new Date()
 const day = date_.getDay()
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-
 const CityInput = ({setSearchedCity,getWeatherData,locData,weatherData,status}) => {
+  useEffect(() => {
+    console.log(day)
+  },[])
     const [city,setCity] = useState(locData.name)
 
     const inputRef = useRef(null)
@@ -48,7 +50,7 @@ const CityInput = ({setSearchedCity,getWeatherData,locData,weatherData,status}) 
           <div className='date-container'>
             <p className='today-text'>Today</p>
             <p className='today-text period'>.</p>
-            <p className='today-text'>{days[day]}</p>
+            <p className='today-text'>{days[day + 1]}</p>
           </div>
         </>
          :
@@ -73,7 +75,7 @@ const CityInput = ({setSearchedCity,getWeatherData,locData,weatherData,status}) 
            <div className='date-container'>
              <p className='today-text'>Today</p>
              <p className='today-text period'>.</p>
-             <p className='today-text'>{days[day]}</p>
+             <p className='today-text'>{days[day +1 ]}</p>
            </div>
          </>
          :

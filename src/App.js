@@ -10,13 +10,13 @@ const App = () => {
 
     setTimeout(() => {
       setLoading(false)
-    }, 3000);
+    }, 2000);
   },[])
 
   return (
     <div className='app'>
       {
-        loading ? <ClipLoader color='#100E1D' size={40}/>
+        loading ? <ClipLoader color='#FFF' size={40}/>
         :
         <DayWeather />
       }

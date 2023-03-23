@@ -25,7 +25,7 @@ const DayWeather = () => {
 
   return (
     <div className='dayweather-wrapper'>
-        <CityInput weatherData={weatherData} status={status} setSearchedCity={setSearchedCity} getWeatherData={getWeatherData} name={weatherData.name} locData={locData}/>
+        {Object.keys(locData).length > 0 ? <CityInput weatherData={weatherData} status={status} setSearchedCity={setSearchedCity} getWeatherData={getWeatherData} name={weatherData.name} locData={locData}/> : ''}
         {
         Object.keys(weatherData).length > 0 ? <DetailInformation weatherData={weatherData} locData={locData}/>
         :
