@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useEffect, useRef, useState } from 'react'
 import '../assets/CityInput.css'
 
@@ -6,12 +7,10 @@ const day = date_.getDay()
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 const CityInput = ({setSearchedCity,getWeatherData,locData,weatherData,status}) => {
-  useEffect(() => {
-    console.log(day)
-  },[])
     const [city,setCity] = useState(locData.name)
 
     const inputRef = useRef(null)
+
 
     useEffect(() => {
       inputRef.current.focus()
@@ -19,8 +18,14 @@ const CityInput = ({setSearchedCity,getWeatherData,locData,weatherData,status}) 
 
     useEffect(() => {
         setSearchedCity(city)
+    
     },[city])
 
+
+    const weatherFunc = () => {
+      getWeatherData();
+      console.log('clicked')
+    }
   return (
     <div className='input-wrapper'>
       <div className='input-box'>

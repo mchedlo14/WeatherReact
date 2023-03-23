@@ -126,7 +126,10 @@ p{
         height: auto;
     }
     .input-wrapper{
-        height: 870px;
+        height: 920px;
+    }
+    .highlights-second-div{
+        margin-top: 0;
     }
 }
 @media(max-width:764px){

@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../assets/Detailinformation.css'
-import { Typewriter } from 'react-simple-typewriter'
+import { Typewriter } from 'react-simple-typewriter';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const DetailInformation = ({weatherData}) => {
+  useEffect(() => {
+    AOS.init({duration:1000});
+    AOS.refresh();
+}, []);
   return (
     <>
     {
@@ -14,7 +20,7 @@ const DetailInformation = ({weatherData}) => {
       <div className='information-container'>
           <div className='detail-first-box'>
             <p className='highlights-text'>Today's Highlights</p>
-            <div className='highlights-first-div'>
+            <div className='highlights-first-div' data-aos="zoom-in-left">
               <div className='wind-box'>
                 <h3 className='wind-title'>Wind status</h3>
                 <p className='wind-text'>{weatherData.wind.speed} mph</p>
